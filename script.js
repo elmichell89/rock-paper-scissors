@@ -94,8 +94,11 @@ function playGame(){
     if(humanScore > computerScore){
         console.log("Your final score: " + humanScore + "\n" + "PC final score: " + computerScore);
         alert("YOU WIN!!");
-    } else{
+    }else if(humanScore < computerScore){
         console.log("Your final score: " + humanScore + "\n" + "PC final score: " + computerScore);
         alert("YOU LOSE!");
+    }else{
+        console.log("Your final score: " + humanScore + "\n" + "PC final score: " + computerScore);
+        alert("TIE")
     }
 }
